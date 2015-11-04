@@ -1,6 +1,6 @@
 var bio = {
 	"name" : "Nora Hamacher",
-	"role" : "Frontend Developer",
+	"role" : "Frontend Web Developer",
 	"contacts" : {
 		"mobile" : "0491159566",
 		"email" : "nora.hamacher@gmail.com",
