@@ -1,0 +1,36 @@
+{
+  "name": "frontend-nanodegree-resume",
+  "version": "1.0.0",
+  "description": "Udacity Frontend Nanodegree Resume",
+  "main": "Gruntfile.js",
+  "dependencies": {
+    "cssbeautify": "^0.3.1",
+    "grunt": "^0.4.5",
+    "grunt-cssbeautifier": "^0.1.2"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-jshint": "^0.11.2",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-cssbeautifier": "^0.1.2",
+    "grunt-newer": "^1.1.1"
+  },
+  "scripts": {
+    "test": "testit"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bluebee123/frontend-nanodegree-resume.git"
+  },
+  "keywords": [
+    "udacity",
+    "nanodegree",
+    "resume"
+  ],
+  "author": "NH",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bluebee123/frontend-nanodegree-resume/issues"
+  },
+  "homepage": "https://github.com/bluebee123/frontend-nanodegree-resume#readme"
+}
