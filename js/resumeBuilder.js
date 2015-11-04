@@ -2,15 +2,15 @@ var bio = {
 	"name" : "Nora Hamacher",
 	"role" : "Frontend Developer",
 	"contacts" : {
-		"mobile" : "123-456-789",
+		"mobile" : "0491159566",
 		"email" : "nora.hamacher@gmail.com",
-		"github" : "bluebee123",
+		"github" : "norahamacher",
 		"twitter" : "N/A",
 		"location" : "Melbourne VIC, Australia"
 	},
 	"welcomeMsg" : "Welcome to my resume!",
-	"skills" : ["Frontend Developer", "Java","Fast worker","Independent Worker","SQL","Search Algorithms"],
-	"biopic" : "http://www.csctradeshow.com/images/female.png",
+	"skills" : ["Frontend Developer", "Responsive Web Design", "knockoutJS", "test-driven development", "Javascript/HTML5/CSS3", "Java","Fast worker","Independent worker","SQL","Search Algorithms"],
+	"biopic" : "images/pic.jpg",
 	"display" : function(){
 		var formattedName = HTMLheaderName.replace("%data%", bio.name);
 		var formattedRole = HTMLheaderRole.replace("%data%", bio.role);
@@ -23,13 +23,13 @@ var bio = {
 
 		$("#header").prepend(formattedRole);
 		$("#header").prepend(formattedName);
-		$("#topContacts").append(formattedMobile);
+		//$("#topContacts").append(formattedMobile);
 		$("#topContacts").append(formattedGithub);
 		$("#topContacts").append(formattedEmail);
 		$("#topContacts").append(formattedLocation);
 
 		$("#header").append(formattedPic);
-		$("#header").append(formattedwelcome);
+		//$("#header").append(formattedwelcome);
 
 		if ( bio.skills.length > 0) {
 			$("#header").append(HTMLskillsStart);
@@ -41,7 +41,7 @@ var bio = {
 			}
 		}
 
-		$("#footerContacts").append(formattedMobile);
+	//	$("#footerContacts").append(formattedMobile);
 		$("#footerContacts").append(formattedGithub);
 		$("#footerContacts").append(formattedEmail);
 		$("#footerContacts").append(formattedLocation);
@@ -51,13 +51,13 @@ var bio = {
 var work = {
 	"jobs": [
 	{
-		"title" : "Programmer",
+		"title" : "Software Developer",
 		"dates" : "2006-2011",
 		"employer" : "Universitätsklinikum Aachen (UKA)",
 		"location" : "Aachen, Germany",
 		"description" : "After three years of apprenticeship parralel to my Bachelor, the UKA took me over for a 2 year full-time contract.\
-						My main responsibilites consisted in Java programming, SAP Webservice and APM module administration and developing a new web mask\
-						for ordering purposes within the house."
+						My main responsibilites consisted in Java programming, SAP Webservice and APM module maintenance and developing a new booking web mask\
+						for ordering purposes within the house, with a database connection."
 	}
 
 	],
@@ -79,22 +79,25 @@ var work = {
 var projects = {
 	"projects": [
 	{
-		"title" : "Responsive Website",
+		"title" : "Wildlife Sightings",
 		"dates" : "2015",
-		"description" : "I programmed a responsive website which displays well on different devices with different sizes. ",
-		"images": ["images/portfolio.jpg","images/portfolio_mob.jpg"]
+		"description" : "Using the google Maps API markers with Australian Wildlife sightings are displayed. Upon clicking the markers or their corresponding entry in the search list of the menu, information from Wikipedia and Flickr is retrieved using AJAX. MVC is encorporated using knockoutJS, the site is responsive and displays well on different sized devices. Grunt and Bower were used for automated build process and package management. ",
+		"images": ["images/neighborhoodMap_desktop.jpg","images/neighborhoodMap_mobile.jpg"],
+		"url": "http://norahamacher.github.io/FEND_P5_Neighborhoodmap/"
 	},
 	{
-		"title" : "Placeholder",
+		"title" : "Arcade Game",
 		"dates" : "2015",
-		"description" : "This is just a placeholder, which will be replaced by real projects, as I continue my nanodegree.",
-		"images": ["images/kang.JPG"]
+		"description" : "Using HTML5 Canvas I programmed a clone of the Arcade Game Frogger.",
+		"images": ["images/arcade.jpg"],
+		"url": "http://norahamacher.github.io/FEND_P4_ArcadeGame"
 	}
 	],
 	"display" : function() {
 		for ( proj in projects.projects) {
 			$("#collapseProjects").append(HTMLprojectStart);
 			var formattedTitle = HTMLprojectTitle.replace("%data%", projects.projects[proj].title);
+			formattedTitle = formattedTitle.replace("%url%", projects.projects[proj].url);
 			$(".project-entry:last").append(formattedTitle);
 			var formattedDates = HTMLprojectDates.replace("%data%", projects.projects[proj].dates);
 			$(".project-entry:last").append(formattedDates);
@@ -132,35 +135,33 @@ var education = {
 
 	],
 	"onlineCourses": [
-	{
-		"title" : "Intro to HTML and CSS",
-		"school" : "Udacity",
-		"date" : 2015,
-		"url" : "https://www.udacity.com/course/viewer#!/c-ud304-nd/"
-	},
+
 	{
 		"title" : "Responsive Web Design Fundamentals",
 		"school" : "Udacity",
 		"date" : 2015,
-		"url" : "https://www.udacity.com/course/viewer#!/c-ud893-nd/"
+		"url" : "https://www.udacity.com/course/responsive-web-design-fundamentals--ud893"
 	},
+	{
+		"title" : "Object-oriented Javascript",
+		"school" : "Udacity",
+		"date" : 2015,
+		"url" : "https://www.udacity.com/course/object-oriented-javascript--ud015"
+	},
+
+
 	{
 		"title" : "Responsive Images",
 		"school" : "Udacity",
 		"date" : 2015,
-		"url" : "https://www.udacity.com/course/viewer#!/c-ud882-nd/"
+		"url" : "https://www.udacity.com/course/responsive-images--ud882"
 	},
+
 	{
-		"title" : "Javascript Basics",
+		"title" : "Javascript Design Patterns",
 		"school" : "Udacity",
 		"date" : 2015,
-		"url" : "https://www.udacity.com/course/viewer#!/c-ud804-nd/"
-	},
-	{
-		"title" : "Intro to jQuery",
-		"school" : "Udacity",
-		"date" : 2015,
-		"url" : "https://www.udacity.com/course/viewer#!/c-ud245-nd/"
+		"url" : "https://www.udacity.com/course/javascript-design-patterns--ud989"
 	}
 	],
 	"display" : function() {

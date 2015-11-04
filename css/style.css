@@ -52,7 +52,7 @@ h6 {
 
 /*added max-width to the images in the project section, so they look well on smaller devices*/
 .project-image {
-  max-width: 100%;
+  max-width: 80%;
 }
 
 h1 {
@@ -201,8 +201,12 @@ a {
   margin-top: 15px;
   max-width: 65%;
   font-size: 18px;
+  margin-left:45px;
 }
 
+#skills li {
+  display: inline;
+}
 .orange {
   background-color: #f5ae23;
 }
@@ -239,6 +243,7 @@ a {
   justify-content: space-around;
   padding: 10px;
 }
+
 
 .center-content {
   padding: 2.5% 5%;
