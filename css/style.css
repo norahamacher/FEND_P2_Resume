@@ -204,6 +204,9 @@ a {
   margin-left:45px;
 }
 
+.role {
+  color: white;
+}
 #skills li {
   display: inline;
 }
