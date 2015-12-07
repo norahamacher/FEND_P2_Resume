@@ -120,7 +120,7 @@ var education = {
 		"name": "Udacity",
 		"location": "USA (online)",
 		"degree": "Nanodegree",
-		"majors" : ["Frontend Webdeveloper"],
+		"majors" : ["Frontend Webdeveloper","Responsive Webdesign","Javascript/CSS3/HTML5","knockoutJS"],
 		"dates" : 2015,
 		"url" : "http://www.udacity.com",
 		"images": ["images/certificate.jpg"]
