@@ -116,13 +116,23 @@ var projects = {
 
 var education = {
 	"schools": [
+		{
+		"name": "Udacity",
+		"location": "USA (online)",
+		"degree": "Nanodegree",
+		"majors" : ["Frontend Webdeveloper"],
+		"dates" : 2015,
+		"url" : "http://www.udacity.com",
+		"images": ["images/certificate.jpg"]
+	},
 	{
 		"name": "Maastricht University",
 		"location": "Maastricht, Netherlands",
 		"degree": "Master",
 		"majors" : ["Artificial Intelligence","Data Mining","Search algorithms","Robotics"],
 		"dates" : 2013,
-		"url" : "http://www.maastrichtuniversity.nl/"
+		"url" : "http://www.maastrichtuniversity.nl/",
+		"images": null
 	},
 	{
 		"name": "FH Aachen/Jülich",
@@ -130,7 +140,8 @@ var education = {
 		"degree": "Bachelor",
 		"majors" :["Scientific Programming","Java"],
 		"dates" : 2009,
-		"url" : "https://www.fh-aachen.de/"
+		"url" : "https://www.fh-aachen.de/",
+		"images": null
 	}
 
 	],
@@ -190,6 +201,13 @@ var education = {
 				}
 				var formattedMajor = HTMLschoolMajor.replace("%data%", majors);
 				$(".education-entry:last").append(formattedMajor);
+				if (education.schools[school].images !== null) {
+					$(".education-entry:last").append("<br>");
+				for ( ima in education.schools[school].images) {
+					var formattedImage = HTMLprojectImage.replace("%data%", education.schools[school].images[ima]);
+					$(".education-entry:last").append(formattedImage);
+				}
+			}
 			}
 		}
 		//display online courses, if there are any
