@@ -80,7 +80,7 @@ var projects = {
 	{
 		"title" : "Movies and Shows",
 		"dates" : "2016",
-		"description" : "I built my own site from scratch, where I comment or review movies and shows I have watched. The site uses bootstrap and AngularJS. themovieDB.com API is used to pull the poster pictures for each item, and the IMDB API is used for the other information. The movies can be sorted by different critera and there is a search implemented. ",
+		"description" : "I built my own site from scratch, where I comment or review movies and shows I have watched. The site uses bootstrap and AngularJS. themovieDB.com API is used to pull the poster pictures for each item, and the IMDB API is used for the other information. The movies can be sorted by different critera and there is a search implemented. The data is stored in a simple Google Spreadsheet, and the  Google Apps Script Execution API is used to access it.",
 		"images": ["images/movieshows.jpg"],
 		"url": "http://norahamacher.github.io/MovieShows/"
 	},
