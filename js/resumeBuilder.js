@@ -55,11 +55,7 @@ var work = {
 		"dates" : "2006-2011",
 		"employer" : "Universitätsklinikum Aachen (UKA)",
 		"location" : "Aachen, Germany",
-		"description" : "After three years of apprenticeship parralel to my Bachelor, the UKA took me over for a 2 year full-time contract.\
-						During the apprenticeship my main responsibilities were: \
-						 Java programming \
-						 Conceptualization and development of a corporate booking website enabling clinics to book beds as well as heads of clinics to confirm these bookings. A connection to a SAS datawarehouse was established as well.\
-						After my fulltime emplyment I worked in the SAP department, creating Webservices and doing administration and support tasks in the SAP environment.
+		"description" : "After three years of apprenticeship parralel to my Bachelor, the UKA took me over for a 2 year full-time contract. During the apprenticeship my main responsibilities were: Java programming --- Conceptualization and development of a corporate booking website enabling clinics to book beds as well as heads of clinics to confirm these bookings. A connection to a SAS datawarehouse was established as well. After my fulltime emplyment I worked in the SAP department, creating Webservices and doing administration and support tasks in the SAP environment."
 
 	}
 
@@ -84,8 +80,7 @@ var projects = {
 	{
 		"title" : "Movies and Shows",
 		"dates" : "2016",
-		"description" : "I built my own site from scratch, where I comment or review movies and shows I have watched. The site uses bootstrap and AngularJS. themovieDB.com API is used to pull the poster pictures for each item, and the IMDB API is used for the other information.
-		The movies can be sorted by different critera and there is a search implemented. ",
+		"description" : "I built my own site from scratch, where I comment or review movies and shows I have watched. The site uses bootstrap and AngularJS. themovieDB.com API is used to pull the poster pictures for each item, and the IMDB API is used for the other information. The movies can be sorted by different critera and there is a search implemented. ",
 		"images": ["images/movieshows.jpg"],
 		"url": "http://norahamacher.github.io/MovieShows/"
 	},
